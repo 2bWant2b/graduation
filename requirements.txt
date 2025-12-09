@@ -1,0 +1,9 @@
+scapy
+drain3
+pillow
+numpy
+# pytorch去官网下
+torch
+torchvision
+tqdm
+matplotlib

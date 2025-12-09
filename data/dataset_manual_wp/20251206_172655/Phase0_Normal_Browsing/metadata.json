@@ -1,0 +1,11 @@
+{
+    "session_id": "20251206_172655",
+    "phase": "Phase0_Normal_Browsing",
+    "timestamp": "2025-12-06T17:38:21.448844",
+    "duration": 163.08668422698975,
+    "target": "WordPress",
+    "files": {
+        "traffic": "traffic.pcap",
+        "log": "app.log"
+    }
+}

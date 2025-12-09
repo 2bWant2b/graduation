@@ -1,0 +1,11 @@
+{
+    "session_id": "20251206_172655",
+    "phase": "Phase2_Attack_BruteForce",
+    "timestamp": "2025-12-06T17:46:20.577715",
+    "duration": 77.73175764083862,
+    "target": "WordPress",
+    "files": {
+        "traffic": "traffic.pcap",
+        "log": "app.log"
+    }
+}

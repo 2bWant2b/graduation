@@ -1,0 +1,446 @@
+[
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0000",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0000.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - [06/Dec/2025:17:35:42 +0800] \"POST /wp-login.php HTTP/1.1\" 302 1228 \"http://localhost:8082/wp-login.php?loggedout=true&wp_lang=en_US\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0001",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0001.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - [06/Dec/2025:17:35:42 +0800] <*> <*> HTTP/1.1\" <*> <*> \"http://localhost:8082/wp-login.php?loggedout=true&wp_lang=en_US\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0002",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0002.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0003",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0003.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0004",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0004.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0005",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0005.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0006",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0006.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0007",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0007.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0008",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0008.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0009",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0009.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0010",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0010.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0011",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0011.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0012",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0012.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0013",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0013.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0014",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0014.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0015",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0015.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0016",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0016.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0017",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0017.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0018",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0018.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0019",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0019.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0020",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0020.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0021",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0021.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0022",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0022.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0023",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0023.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0024",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0024.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0025",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0025.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0026",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0026.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0027",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0027.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0028",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0028.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0029",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0029.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0030",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0030.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0031",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0031.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0032",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0032.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0033",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0033.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0034",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0034.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0035",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0035.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase0_Normal_Browsing_evt0036",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase0_Normal_Browsing_evt0036.pt",
+        "label": 0,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase1_Recon_Scanning_evt0000",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase1_Recon_Scanning_evt0000.pt",
+        "label": 1,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase1_Recon_Scanning_evt0001",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase1_Recon_Scanning_evt0001.pt",
+        "label": 1,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase1_Recon_Scanning_evt0002",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase1_Recon_Scanning_evt0002.pt",
+        "label": 1,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase1_Recon_Scanning_evt0003",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase1_Recon_Scanning_evt0003.pt",
+        "label": 1,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase1_Recon_Scanning_evt0004",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase1_Recon_Scanning_evt0004.pt",
+        "label": 1,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase1_Recon_Scanning_evt0005",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase1_Recon_Scanning_evt0005.pt",
+        "label": 1,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase1_Recon_Scanning_evt0006",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase1_Recon_Scanning_evt0006.pt",
+        "label": 1,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase1_Recon_Scanning_evt0007",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase1_Recon_Scanning_evt0007.pt",
+        "label": 1,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase1_Recon_Scanning_evt0008",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase1_Recon_Scanning_evt0008.pt",
+        "label": 1,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase1_Recon_Scanning_evt0009",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase1_Recon_Scanning_evt0009.pt",
+        "label": 1,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase1_Recon_Scanning_evt0010",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase1_Recon_Scanning_evt0010.pt",
+        "label": 1,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase1_Recon_Scanning_evt0011",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase1_Recon_Scanning_evt0011.pt",
+        "label": 1,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase1_Recon_Scanning_evt0012",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase1_Recon_Scanning_evt0012.pt",
+        "label": 1,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase1_Recon_Scanning_evt0013",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase1_Recon_Scanning_evt0013.pt",
+        "label": 1,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase1_Recon_Scanning_evt0014",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase1_Recon_Scanning_evt0014.pt",
+        "label": 1,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase2_Attack_BruteForce_evt0000",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase2_Attack_BruteForce_evt0000.pt",
+        "label": 2,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase2_Attack_BruteForce_evt0001",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase2_Attack_BruteForce_evt0001.pt",
+        "label": 2,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase2_Attack_BruteForce_evt0002",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase2_Attack_BruteForce_evt0002.pt",
+        "label": 2,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase2_Attack_BruteForce_evt0003",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase2_Attack_BruteForce_evt0003.pt",
+        "label": 2,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase2_Attack_BruteForce_evt0004",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase2_Attack_BruteForce_evt0004.pt",
+        "label": 2,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase2_Attack_BruteForce_evt0005",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase2_Attack_BruteForce_evt0005.pt",
+        "label": 2,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase2_Attack_BruteForce_evt0006",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase2_Attack_BruteForce_evt0006.pt",
+        "label": 2,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase2_Attack_BruteForce_evt0007",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase2_Attack_BruteForce_evt0007.pt",
+        "label": 2,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase2_Attack_BruteForce_evt0008",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase2_Attack_BruteForce_evt0008.pt",
+        "label": 2,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase2_Attack_BruteForce_evt0009",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase2_Attack_BruteForce_evt0009.pt",
+        "label": 2,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase2_Attack_BruteForce_evt0010",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase2_Attack_BruteForce_evt0010.pt",
+        "label": 2,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase2_Attack_BruteForce_evt0011",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase2_Attack_BruteForce_evt0011.pt",
+        "label": 2,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase2_Attack_BruteForce_evt0012",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase2_Attack_BruteForce_evt0012.pt",
+        "label": 2,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase3_Exploit_Action_evt0000",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase3_Exploit_Action_evt0000.pt",
+        "label": 3,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase3_Exploit_Action_evt0001",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase3_Exploit_Action_evt0001.pt",
+        "label": 3,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase3_Exploit_Action_evt0002",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase3_Exploit_Action_evt0002.pt",
+        "label": 3,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase3_Exploit_Action_evt0003",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase3_Exploit_Action_evt0003.pt",
+        "label": 3,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase3_Exploit_Action_evt0004",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase3_Exploit_Action_evt0004.pt",
+        "label": 3,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase3_Exploit_Action_evt0005",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase3_Exploit_Action_evt0005.pt",
+        "label": 3,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase3_Exploit_Action_evt0006",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase3_Exploit_Action_evt0006.pt",
+        "label": 3,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase3_Exploit_Action_evt0007",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase3_Exploit_Action_evt0007.pt",
+        "label": 3,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    },
+    {
+        "sample_id": "20251206_172655_Phase3_Exploit_Action_evt0008",
+        "path": "C:\\Users\\36323\\Desktop\\\u6bd5\u4e1a\u8bbe\u8ba1\u4ee3\u7801\\data\\processed\\20251206_172655_Phase3_Exploit_Action_evt0008.pt",
+        "label": 3,
+        "log_template": "172.18.0.1 - - <*> +0800] <*> <*> HTTP/1.1\" <*> <*> <*> \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\""
+    }
+]

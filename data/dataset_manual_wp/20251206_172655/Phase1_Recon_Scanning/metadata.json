@@ -1,0 +1,11 @@
+{
+    "session_id": "20251206_172655",
+    "phase": "Phase1_Recon_Scanning",
+    "timestamp": "2025-12-06T17:43:16.402935",
+    "duration": 108.72624325752258,
+    "target": "WordPress",
+    "files": {
+        "traffic": "traffic.pcap",
+        "log": "app.log"
+    }
+}
