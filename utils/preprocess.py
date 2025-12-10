@@ -26,7 +26,6 @@ try:
     import config
 except ImportError:
     class Config:
-        # 默认配置（如果没有 config.py）
         RAW_DATA_DIR = os.path.join(project_root, "data", "dataset_manual_wp")
         PROCESSED_DATA_DIR = os.path.join(project_root, "data", "processed")
         DATA_DIR = os.path.join(project_root, "data")
@@ -36,14 +35,12 @@ except ImportError:
             "Phase2_Attack_BruteForce": 2,
             "Phase3_Exploit_Action": 3
         }
-        # 新增参数：每个样本的最大图片序列长度
-        TRAFFIC_MAX_BYTES = 224 * 224
-        MAX_IMG_SEQ_LEN = 6  # 两个日志之间最多截取6张图（特征聚合用）
+        TRAFFIC_MAX_BYTES = 1024
+        MAX_IMG_SEQ_LEN = 6
 
 
     config = Config()
 
-# 确保 config 中有 MAX_IMG_SEQ_LEN，防止旧配置文件报错
 if not hasattr(config, 'MAX_IMG_SEQ_LEN'):
     config.MAX_IMG_SEQ_LEN = 6
 
@@ -55,74 +52,62 @@ class TrafficPreprocessor:
         self.max_seq_len = max_seq_len
 
     def _bytes_to_single_tensor(self, raw_bytes):
-        """内部辅助函数：将单段字节流转为一张图片 Tensor"""
         if len(raw_bytes) == 0:
             return torch.zeros((3, *self.target_size), dtype=torch.float32)
 
         byte_array = np.frombuffer(raw_bytes, dtype=np.uint8)
 
-        # 截断与补零 (针对单张图的标准大小)
         if len(byte_array) < self.max_bytes:
             padding = np.zeros(self.max_bytes - len(byte_array), dtype=np.uint8)
             byte_array = np.concatenate((byte_array, padding))
         else:
             byte_array = byte_array[:self.max_bytes]
 
-        # 重塑为 2D 矩阵
-        side_len = int(np.sqrt(self.max_bytes))
+        side_len = int(np.ceil(np.sqrt(self.max_bytes)))
+        if len(byte_array) < side_len * side_len:
+            padding = np.zeros(side_len * side_len - len(byte_array), dtype=np.uint8)
+            byte_array = np.concatenate((byte_array, padding))
+
         img_array = byte_array.reshape((side_len, side_len))
 
-        # 转换为图像并 Resize
         img = Image.fromarray(img_array, mode='L')
         img = img.resize(self.target_size, Image.Resampling.NEAREST)
 
-        # 归一化并转为 3 通道
         img_np = np.array(img).astype(np.float32) / 255.0
-        # (3, H, W)
         img_tensor = torch.from_numpy(np.stack([img_np, img_np, img_np], axis=0))
-
         return img_tensor
 
     def bytes_to_image_sequence(self, raw_bytes):
-        """
-        核心修改：将长字节流切割为图片序列
-        返回形状: (Seq_Len, 3, H, W), 例如 (6, 3, 224, 224)
-        """
-        # 1. 如果没有流量，生成全黑序列
         if len(raw_bytes) == 0:
             return torch.zeros((self.max_seq_len, 3, *self.target_size), dtype=torch.float32)
 
-        # 2. 按 max_bytes 切分流量块
         chunks = [raw_bytes[i: i + self.max_bytes] for i in range(0, len(raw_bytes), self.max_bytes)]
 
-        # 3. 截断（如果切出的图片超过设定长度）
         if len(chunks) > self.max_seq_len:
             chunks = chunks[:self.max_seq_len]
 
-        # 4. 生成 Tensor 序列
         image_list = []
         for i in range(self.max_seq_len):
             if i < len(chunks):
-                # 有内容，转换
                 img_tensor = self._bytes_to_single_tensor(chunks[i])
             else:
-                # 没内容，补全黑图 (Padding)
                 img_tensor = torch.zeros((3, *self.target_size), dtype=torch.float32)
-
             image_list.append(img_tensor)
 
-        # 堆叠为 (Seq, C, H, W)
         return torch.stack(image_list)
 
 
 class LogPreprocessor:
     def __init__(self):
-        self.config = TemplateMinerConfig()
-        self.miner = TemplateMiner(persistence_handler=None, config=self.config)
+        # 移除 Drain3 初始化，改用正则预编译
+        # 1. 匹配 IPv4 地址
+        self.ip_pattern = re.compile(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}')
+        # 2. 匹配中括号内的时间戳，例如 [06/Dec/2025:17:26:55 +0000]
+        self.time_pattern = re.compile(r'\[\d{2}/[A-Za-z]{3}/\d{4}.*?\]')
+        # 3. 匹配部分 Hex 编码的 Payload (可选，视情况而定，这里先不加太重，以免误伤)
 
     def parse_timestamp(self, log_line):
-        """解析日志时间戳"""
-        # 匹配标准 Apache/Nginx 格式: [06/Dec/2025:17:26:55 +0000]
+        """保持原有的时间解析逻辑不变，用于切片"""
         match = re.search(r'\[(\d{2}/[A-Za-z]{3}/\d{4}:\d{2}:\d{2}:\d{2} \+\d{4})\]', log_line)
         if match:
             time_str = match.group(1)
@@ -134,40 +119,44 @@ class LogPreprocessor:
         return None
 
     def process_single_log(self, log_line):
-        """处理单条日志，返回模板"""
+        """
+        使用正则清洗代替 Drain3 模板挖掘。
+        目标：去除 IP 和 时间 噪声，保留 Method, URL, Status, UserAgent 语义。
+        """
         log_line = log_line.strip()
         if not log_line or log_line.startswith("---"):
             return "[NO_LOG]"
 
-        result = self.miner.add_log_message(log_line)
-        return result['template_mined']
+        # 1. 替换 IP 地址为 [IP]
+        clean_line = self.ip_pattern.sub("[IP]", log_line)
 
+        # 2. 替换时间戳为 [TIME]
+        clean_line = self.time_pattern.sub("[TIME]", clean_line)
+
+        # 3. 截断超长日志 (BERT 最大长度限制)
+        # 很多 User-Agent 或 Payload 会非常长，截取前 256 字符通常足够包含关键攻击语义
+        if len(clean_line) > 256:
+            clean_line = clean_line[:256]
+
+        return clean_line
 
 class DataProcessor:
     def __init__(self):
-        # 初始化预处理器
         self.traffic_prep = TrafficPreprocessor(
             max_bytes=config.TRAFFIC_MAX_BYTES,
             max_seq_len=config.MAX_IMG_SEQ_LEN
         )
         self.log_prep = LogPreprocessor()
-
         self.output_dir = config.PROCESSED_DATA_DIR
-        os.makedirs(self.output_dir, exist_ok=True)
 
     def process_session(self, session_id, phase_name, pcap_path, log_path):
-        # 1. 加载 PCAP
         try:
             packets = rdpcap(pcap_path)
             if not packets: return []
-            # 简单验证包时间
-            # print(f"  Pcap loaded: {len(packets)} packets")
         except Exception as e:
             print(f"    [Error] Pcap read failed: {e}")
             return []
 
-        # 2. 加载 Log 并提取时间戳
-        # 格式: list of (timestamp, raw_line_string)
         log_events = []
         try:
             if os.path.exists(log_path):
@@ -180,38 +169,33 @@ class DataProcessor:
             print(f"    [Error] Log read failed: {e}")
             return []
 
-        # 按时间排序日志
         log_events.sort(key=lambda x: x[0])
+        if (len(log_events) < 2): return []
 
-        if len(log_events) < 2:
-            print(f"    [Skip] Not enough logs to form intervals in {session_id}")
-            return []
+        # === 核心修改：增加 dataset 名称层级 ===
+        # 获取 raw_data 目录的最后一级名称，例如 "dataset_manual_wp"
+        dataset_name = os.path.basename(config.RAW_DATA_DIR.rstrip(os.sep))
 
-        # 3. 基于日志间隔切片 (Event-driven Slicing)
+        # 路径结构: data/processed/<dataset_name>/<session_id>/<phase_name>/
+        save_dir = os.path.join(self.output_dir, dataset_name, session_id, phase_name)
+        os.makedirs(save_dir, exist_ok=True)
+        # =================================
+
         saved_samples = []
 
-        # 遍历每一对相邻的日志 (L_i, L_{i+1})
         for i in range(len(log_events) - 1):
             curr_ts, curr_line = log_events[i]
             next_ts, next_line = log_events[i + 1]
 
-            # 定义时间窗口: [当前日志时间, 下一条日志时间]
             start_time = curr_ts
             end_time = next_ts
 
-            # 异常检查：如果间隔过长（例如超过5分钟），可能是会话中断，可以选择跳过或截断
-            # 这里为了简化，我们设定一个硬性上限，比如60秒，超过60秒只取前60秒的流量
             if end_time - start_time > 60.0:
                 end_time = start_time + 60.0
 
-            # --- 提取该时间段内的流量 ---
-            # 优化：不需要每次都遍历整个 packets 列表，可以使用指针，但为保安全这里先遍历
-            # (如果数据量极大，建议优化为指针滑动)
-            window_raw_bytes = b''
-
-            # 快速筛选包
             slice_packets = [p for p in packets if start_time <= float(p.time) < end_time]
 
+            window_raw_bytes = b''
             for pkt in slice_packets:
                 if pkt.haslayer(IP):
                     window_raw_bytes += bytes(pkt[IP])
@@ -220,21 +204,12 @@ class DataProcessor:
                 else:
                     window_raw_bytes += bytes(pkt)
 
-            # --- 核心改变：生成图片序列 (Feature Aggregation Ready) ---
-            # 返回 shape: (MAX_SEQ_LEN, 3, 224, 224)
             traffic_img_seq = self.traffic_prep.bytes_to_image_sequence(window_raw_bytes)
-
-            # --- 处理日志 ---
-            # 语义上，这段流量是由 curr_line 触发的，或者是为了达成 next_line
-            # 这里我们取 curr_line 的语义作为这段行为的标签
             log_template = self.log_prep.process_single_log(curr_line)
-
-            # --- 保存 ---
-            # 即使流量为空，但日志发生了，也要记录（图片全黑）
             label_id = config.LABEL_MAP.get(phase_name, -1)
 
             data_item = {
-                "image": traffic_img_seq,  # 注意：现在是4D Tensor
+                "image": traffic_img_seq,
                 "text": log_template,
                 "label": label_id,
                 "timestamp": start_time,
@@ -242,26 +217,37 @@ class DataProcessor:
             }
 
             file_name = f"{session_id}_{phase_name}_evt{i:04d}.pt"
-            save_path = os.path.join(self.output_dir, file_name)
+            save_path = os.path.join(save_dir, file_name)
             torch.save(data_item, save_path)
+
+            # 计算相对路径 (例如: "data/processed/dataset_manual_wp/...")
+            relative_path = os.path.relpath(save_path, project_root)
+
+            # 为了兼容 Windows/Linux 路径分隔符差异 (反斜杠 vs 斜杠)
+            # 统一强制替换为 "/"，这样 Linux 读 Windows 生成的 JSON 也不会错
+            if "\\" in relative_path:
+                relative_path = relative_path.replace("\\", "/")
+            # ----------------
+            print(relative_path)
 
             saved_samples.append({
                 "sample_id": file_name.replace(".pt", ""),
-                "path": save_path,
+                "path": relative_path,  # <--- 变成了灵活的相对路径
                 "label": label_id,
-                "log_template": log_template
+                "phase": phase_name,
+                "session": session_id,
+                "dataset": dataset_name
             })
 
         return saved_samples
 
     def run_all(self):
-        """主入口"""
-        print("-" * 50)
+        dataset_name = os.path.basename(config.RAW_DATA_DIR.rstrip(os.sep))
+        print("-" * 60)
         print(f"Reading from: {config.RAW_DATA_DIR}")
-        print(f"Saving to:    {config.PROCESSED_DATA_DIR}")
-        print(f"Mode:         Event-driven (Log Interval Alignment)")
-        print(f"Image Seq:    Max {config.MAX_IMG_SEQ_LEN} frames per sample")
-        print("-" * 50)
+        print(f"Saving to:    {config.PROCESSED_DATA_DIR}/{dataset_name}/<session>/<phase>/")
+        print(f"Params:       MaxBytes={config.TRAFFIC_MAX_BYTES}, SeqLen={config.MAX_IMG_SEQ_LEN}")
+        print("-" * 60)
 
         all_indices = []
         raw_root = config.RAW_DATA_DIR
